@@ -21,7 +21,7 @@ Script at bottom of page; load javascript last so that webpage display loads fir
     <!-- NUMBERS
     OPERATORS +,-,/,*,%
     MODIFY/REASSIGN VARIABLE w/ '='
-    +=, -=, 
+    +=, -=,
      -->
 
 <!-- BOOLEANS
@@ -36,7 +36,7 @@ INVERT BOOL WITH !-->
             console.log(true)
         } else {
             console.log(false)
-        } 
+        }
         }
     }
 
@@ -57,3 +57,92 @@ innerHTML is treated as HTML you (can add tags) -->
 
 <!-- DOT NOTATION (drilling through an object with known properties) -->
 <!-- BRACKET NOTATION (accessing properties on an objects using a variable) -->
+
+COMPLEX OBJECTS
+
+
+let Utahutes = {
+    conference: "Pac-12",
+    divisionChampionships: 4,
+    conferenceChampionships: 1,
+    power5: true,
+    tags ['pac12', 'mountain teams', 'red', 'defense'],
+    starters: [
+        {
+            name: "Britain Covey",
+            positions: ['WR', 'PR']
+        },
+        {
+            name: "Cameron Rising",
+            positions: ['QB', 'P']
+        }
+    ]
+}
+
+console.log(utahUtes.starters[0].name) will print Britain Covey
+console.log(utahUtes.tags[3]) will print defense
+
+FOR LOOPS
+
+const cats = ['garfield',' 'pepperbottom', 'ham', 'carl']
+for (let i=0; i < cats.length; i++){
+    let cat = cats[i]
+    console.log(cat)
+}
+
+FOR EACH
+
+cats.forEach(function blah(){
+
+})
+
+cats.forEach(c => console.log(c.name ))
+
+PUSH FUNCTION (ADDING TO ARRAY
+
+let cuddly []
+for (let i=0-; i < cats.length; i++){
+    let cat = cats[i]
+    if (cat.cuddles){
+        cuddly.push(cat)
+    }
+}
+
+<!-- CREATES NEW ARRAY CALLED CUDDLY AND LOOP WILL ITERATE AND LOG ONLY CATS ^^^^^^^^^ -->
+
+FILTER FUNCTION (creates new array w/ all elements that pass the function) *used to 'scrub' an array to create a new one from that data w/o destroying/altering the original array.
+
+let cuddly = cats.filter(cat => cat.cuddles)
+let orangeCats = cats.filter(cat => cat.color =='orange' && cat.cuddle)  *WILL CREATE NEW ARRAY OF ALL CATS WHO ARE CUDDLES:TRUE AND COLOR:ORANGE
+
+<!-- TO PRINT TO PAGE -->
+
+let template =
+for (let i = 0; i < cats.length; i++){
+    const cat = cats[i];
+    template += '<li>Carl: Orange</li>'
+}
+document.getElementById('cats').innerHTML = template
+
+<!-- USE CURLY BRACKETS TO ACCESS SPECIFIC VALUES AND PRINT THOSE -->
+
+let template =
+for (let i = 0; i < cats.length; i++){
+    const cat = cats[i];
+    template += '<li>${cat.name}: ${cat.name}</li>'
+}
+document.getElementById('cats').innerHTML = template
+
+<!-- WITH BUTTON IN HTML ONCLICK = "filterCuddly()" -->
+
+function filterCuddly()
+let cuddlyCats = cats.filter(cat => cat.cuddles)
+let template =
+for (let i = 0; i < cats.cuddlyCats; i++){
+    const cat = cuddlyCats[i];
+    template += '<li>${cat.name}: ${cat.name}</li>'
+}
+document.getElementById('cats').innerHTML = template
+
+<!-- NOTICE HOW THE TEMPLATE IS NOW ITERATING OVER THE NEW ARRAY ^^^^ -->
+
