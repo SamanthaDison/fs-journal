@@ -146,3 +146,17 @@ document.getElementById('cats').innerHTML = template
 
 <!-- NOTICE HOW THE TEMPLATE IS NOW ITERATING OVER THE NEW ARRAY ^^^^ -->
 
+<!-- MAKING A MENU DAY 3 -->
+
+ const products []
+
+function drawMenu(){
+    let template = ''
+    <!-- look at each product -->
+products.forEach(prod => {
+    <!-- add product to template -->
+template 'INSERT HTML AND MAKE SURE TO INTERPOLATE ITEMS FROM ARRAYS (PROD NAME, IMG, PRICE)
+})
+    <!-- draw to page -->
+    documemt.getElementById('menu').innerHTML = template
+}
