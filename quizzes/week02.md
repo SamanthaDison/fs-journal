@@ -2,12 +2,12 @@
 
 **1.** Which keywords are used to declare a variable in JavaScript?
 <!-- enter you answer in the space below -->
-```
+``` var, let, const
 
 ```
 **2.** What is the definition of a function?
 <!-- enter you answer in the space below -->
-```
+``` A set of statements or acts that will calculates a value. Requires a parameter and argument.
 
 ```
 **3.** What are the `SOLID` principles?
@@ -21,7 +21,7 @@ let fruit = ['apple', 'banana', 'pineapple',  'orange', 'strawberry']
 ``` 
 What index is the pineapple's current position? How do you know?
 <!-- enter you answer in the space below -->
-```
+```Index 2; arrays begin with index 0
 
 ```
 **5.** With these two objects: 
@@ -32,12 +32,15 @@ let them = { name:"Them", hair: false, friends: [] }
 how would you .push the `them` object into the `you` object's array of friends?
 <!-- enter you answer in the space below -->
 ```
-
+Creat a new array or dictionary and add both to them. 
+Let newArray = object.assign ([], you, them)
 ```
 
 **6.** Give an example of a JavaScript `Conditional`:
 <!-- enter you answer in the space below -->
-```
+```if (1 >= 0){
+  return :true
+}
 
 ```
 **7.** In the `for loop` below, what is the name of the piece belongs inside the empty "______" space? What would you put here to increase `i` by one on every iteration?
