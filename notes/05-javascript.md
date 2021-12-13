@@ -160,3 +160,6 @@ template 'INSERT HTML AND MAKE SURE TO INTERPOLATE ITEMS FROM ARRAYS (PROD NAME,
     <!-- draw to page -->
     documemt.getElementById('menu').innerHTML = template
 }
+
+const order = products.find(prod => prod.id) === id
+
