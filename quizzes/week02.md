@@ -13,7 +13,7 @@
 **3.** What are the `SOLID` principles?
 <!-- enter you answer in the space below -->
 ```
-
+Single responsibility; open-closed; liskov substitution; interface segregation; dependency inversion
 ```
 **4.** Given this array: 
 ```js
@@ -38,7 +38,7 @@ Let newArray = object.assign ([], you, them)
 
 **6.** Give an example of a JavaScript `Conditional`:
 <!-- enter you answer in the space below -->
-```if (1 >= 0){
+```if (1 > 0){
   return :true
 }
 
@@ -50,26 +50,26 @@ for ( let i = 0; i < arr.length; _______ ) {
 ```
 <!-- enter you answer in the space below -->
 ```
-
+Iterator; i++
 ```
 **8.** What does the `DOM` acronym stand for? Which file is first accessed to render the `DOM`?
 <!-- enter you answer in the space below -->
 ```
-
+DOM stands for document object model; HTML is the first file accessed.
 ```
 
 **9.** What are the `9` ECMAScript types as defined by MDN?
 <!-- enter you answer in the space below -->
 ```
-
+Boolean, Null, Undefined, Number, BigInt, String, Symbol
 ```
 **10.** When it comes to functions or methods, what is the difference between a `parameter` and an `argument`?
 <!-- enter you answer in the space below -->
 ```
-
+A parameter is the variable or 'key' being plugged into the function in order to execute the argument or conditions of a function. Parameter goes in; and arguments are the conditions expressed.
 ```
 **11.** What is the difference between a `primitive` value and a `reference` value?
 <!-- enter you answer in the space below -->
 ```
-
+Primitive values are fixed and stored on the stack; reference values are dynamic and stored on the heap.
 ```
